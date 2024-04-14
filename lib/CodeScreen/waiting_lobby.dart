@@ -58,8 +58,10 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
       appBar: AppBar(
         title: Text("Watting Lobby!"),
+        backgroundColor: Color.fromARGB(255, 236, 175, 146),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

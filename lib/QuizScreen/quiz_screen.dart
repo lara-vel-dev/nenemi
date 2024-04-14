@@ -35,7 +35,9 @@ class _QuizScreenState extends State<QuizScreen> {
   Widget build(BuildContext context) {
     WidgetQuestion question = questions[currentQuestionIndex];
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
       appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 236, 175, 146),
         title: Text("Test about: Real del Monte"),
       ),
       body: Padding(
@@ -75,7 +77,10 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Test Result")),
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
+      appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 236, 175, 146),
+          title: Text("Test Result")),
       body: Center(
           child: Column(
         children: [

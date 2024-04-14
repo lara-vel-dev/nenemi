@@ -14,7 +14,10 @@ class TourScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Tour Screen Expirience")),
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
+      appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 236, 175, 146),
+          title: Text("Tour Screen Expirience")),
       body: Column(children: [
         Text("AR IS COOL"),
         ElevatedButton(
