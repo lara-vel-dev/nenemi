@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../pages/FinishTourScreen/finish_tour.dart';
 import 'question.dart';
 import 'question_list.dart';
 
@@ -86,6 +87,16 @@ class ResultScreen extends StatelessWidget {
           Text(
             "Congratulation! Your puntuaction are:  $score/$total",
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+          ),
+
+          SizedBox(height: 20),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => FinishTour()),
+              );
+            },
+            child: Text("End Tour"),
           ),
         ],
       )),
