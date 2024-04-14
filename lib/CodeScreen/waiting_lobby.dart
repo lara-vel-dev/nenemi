@@ -8,6 +8,7 @@ class LobbyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: WaitingRoomScreen(),
     );
   }
@@ -57,8 +58,10 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
       appBar: AppBar(
         title: Text("Watting Lobby!"),
+        backgroundColor: Color.fromARGB(255, 236, 175, 146),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -67,7 +70,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              "Waiting for other participants... Meanwhile put your sealtbelt",
+              "Entering to: Real del Monte \nWaiting for other participants... Meanwhile put your sealtbelt",
               style: TextStyle(fontSize: 24),
               textAlign: TextAlign.center,
             ),

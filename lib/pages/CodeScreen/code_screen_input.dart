@@ -11,6 +11,7 @@ class CodeScreenInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: NumericCodeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -40,7 +41,12 @@ class _NumericCodeScreenState extends State<NumericCodeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
       appBar: AppBar(
+        // color: Color(0xFFFFE0D6), // Usando el color específico
+
+        // backgroundColor: Color.fromARGB(255, 156, 154, 25),
+        backgroundColor: Color.fromARGB(255, 236, 175, 146),
         title: const Text('Introduce your code: '),
       ),
       body: Padding(
@@ -82,8 +88,12 @@ class _NumericCodeScreenState extends State<NumericCodeScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 17, 66, 2),
         onPressed: _submitCode,
-        child: const Text("Send"),
+        child: const Text(
+          "Send",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }
