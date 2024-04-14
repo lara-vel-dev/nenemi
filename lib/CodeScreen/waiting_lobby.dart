@@ -86,9 +86,10 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
           ),
           SizedBox(height: 50),
           ElevatedButton(
-            style: buttonPrimary,
+            style: smallButtonStyle,
             onPressed: navigateToNextScreen,
-            child: Text("Skip other participants and start"),
+            child: Text("Skip other participants and start",
+                style: TextStyle(fontSize: 20)),
           ),
         ],
       ),

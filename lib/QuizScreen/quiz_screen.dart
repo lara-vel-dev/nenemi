@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../pages/FinishTourScreen/finish_tour.dart';
+import '../styles/button.dart';
 import 'question.dart';
 import 'question_list.dart';
 
@@ -55,13 +56,19 @@ class _QuizScreenState extends State<QuizScreen> {
 
             Text(
               question.text,
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              // style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 20),
-            ...question.options.map((option) => ElevatedButton(
-                  onPressed: () => checkAnswer(option),
-                  child: Text(option.text),
+            SizedBox(height: 25),
+
+            ...question.options.map((option) => Padding(
+                  padding: EdgeInsets.only(
+                      bottom: 8), // Adjust the padding as needed
+                  child: ElevatedButton(
+                    style: questionButtonStyle,
+                    onPressed: () => checkAnswer(option),
+                    child: Text(option.text),
+                  ),
                 )),
           ],
         ),
@@ -99,6 +106,7 @@ class ResultScreen extends StatelessWidget {
 
           SizedBox(height: 20),
           ElevatedButton(
+            style: buttonPrimary,
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(builder: (context) => FinishTour()),

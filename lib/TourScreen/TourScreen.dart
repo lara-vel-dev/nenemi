@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../QuizScreen/quiz_screen.dart';
+import '../styles/button.dart';
 
 Future<void> _launchURL(String url) async {
   if (await canLaunch(url)) {
@@ -28,6 +29,7 @@ class TourScreen extends StatelessWidget {
             SizedBox(height: 24), // Add this line for spacing
 
             ElevatedButton(
+              style: buttonPrimary,
               onPressed: () =>
                   // _launchURL(
                   //     'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D'),
@@ -36,30 +38,24 @@ class TourScreen extends StatelessWidget {
                     'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D'),
                 mode: LaunchMode.externalApplication,
               ),
-              // onPressed: () async {
-              //   var url =
-              //       'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D';
-
-              //   if (await canLaunch(url)) {
-              //     await launch(
-              //       url,
-              //       universalLinksOnly: true,
-              //     );
-              //   } else {
-              //     throw 'There was a problem to open the url: $url';
-              //   }
-              // },
-              child: Text("Let's play!"),
+              child: Text(
+                "Let's play!",
+                style: TextStyle(fontSize: 20),
+              ),
             ),
             SizedBox(height: 24), // Add this line for spacing
 
             ElevatedButton(
+              style: buttonPrimary,
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => QuizScreen()),
                 );
               },
-              child: Text("Challenge yourself"),
+              child: Text(
+                "Challenge yourself",
+                style: TextStyle(fontSize: 20),
+              ),
             ),
           ]
               // QuizScreen
