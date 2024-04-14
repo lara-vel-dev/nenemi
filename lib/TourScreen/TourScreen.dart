@@ -14,47 +14,56 @@ class TourScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 236, 175, 146),
-      appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 236, 175, 146),
-          title: Text("Tour Screen Expirience")),
-      body: Column(children: [
-        Text("AR IS COOL"),
-        ElevatedButton(
-          onPressed: () =>
-              // _launchURL(
-              //     'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D'),
-              launchUrl(
-            Uri.parse(
-                'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D'),
-            mode: LaunchMode.externalApplication,
-          ),
-          // onPressed: () async {
-          //   var url =
-          //       'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D';
+        backgroundColor: Color.fromARGB(255, 236, 175, 146),
+        appBar: AppBar(
+            backgroundColor: Color.fromARGB(255, 236, 175, 146),
+            title: Text("Tour Screen Expirience")),
+        body: Center(
+          child: Column(children: [
+            Image.asset(
+              "assets/real-del-monte.png",
+              width: 250,
+              height: 250,
+            ),
+            SizedBox(height: 24), // Add this line for spacing
 
-          //   if (await canLaunch(url)) {
-          //     await launch(
-          //       url,
-          //       universalLinksOnly: true,
-          //     );
-          //   } else {
-          //     throw 'There was a problem to open the url: $url';
-          //   }
-          // },
-          child: Text("Let's start a Game!"),
-        ),
-        ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(builder: (context) => QuizScreen()),
-            );
-          },
-          child: Text("Let's see the Tour"),
-        ),
-      ]
-          // QuizScreen
-          ),
-    );
+            ElevatedButton(
+              onPressed: () =>
+                  // _launchURL(
+                  //     'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D'),
+                  launchUrl(
+                Uri.parse(
+                    'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D'),
+                mode: LaunchMode.externalApplication,
+              ),
+              // onPressed: () async {
+              //   var url =
+              //       'https://www.instagram.com/ar/2173879186288909/?ch=ZDQ1OWI1ZjBlZDAzNDIwZTlhOWU3ODI2MDc1MWVhNjQ%3D';
+
+              //   if (await canLaunch(url)) {
+              //     await launch(
+              //       url,
+              //       universalLinksOnly: true,
+              //     );
+              //   } else {
+              //     throw 'There was a problem to open the url: $url';
+              //   }
+              // },
+              child: Text("Let's start a Game!"),
+            ),
+            SizedBox(height: 24), // Add this line for spacing
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => QuizScreen()),
+                );
+              },
+              child: Text("Let's see the Tour"),
+            ),
+          ]
+              // QuizScreen
+              ),
+        ));
   }
 }
