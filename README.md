@@ -1,10 +1,9 @@
 <div align="center">
   
   <h1>
-    <img src="https://media1.tenor.com/m/76IzvqjyvgUAAAAC/passport-traveling.gif" width=60> 
     NENEMI
-    <img src="https://media1.tenor.com/m/76IzvqjyvgUAAAAC/passport-traveling.gif" width=60>
   </h1>
+  <h3>Explore beyond what you see</h3>
    <img src="assets/logo-green.png" width=260>
 </div> 
 
@@ -15,10 +14,10 @@
       <a href="#who-are-we"> Who are we? </a>
     </li>
     <li>
-      <a href="#macos-using-homebrew">Why Nenemi?</a>
+      <a href="#why-nenemi">Why Nenemi?</a>
     </li>
     <li>
-      <a href="#macos-using-homebrew">Tech Stack</a>
+      <a href="#tech-stack">Tech Stack</a>
     </li>
   </ol>
 
