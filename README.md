@@ -23,3 +23,18 @@
   </ol>
 
 </div>
+
+<div align="justify">
+  <h2>Who are we?</h2>
+  <p></p>
+</div>
+
+<div align="justify">
+  <h2>Why Nenemi?</h2>
+  <p></p>
+</div>
+
+<div align="justify">
+  <h2>Tech Stack</h2>
+  <p></p>
+</div>
