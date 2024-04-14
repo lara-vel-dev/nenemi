@@ -21,10 +21,7 @@ class Login extends StatelessWidget {
               const SizedBox(height: 50),
 
               // logo
-              const Icon(
-                Icons.lock,
-                size: 100,
-              ),
+              const Image(image: AssetImage('assets/images/login/logo-green.png')),
 
               const SizedBox(height: 50),
 
@@ -114,15 +111,22 @@ class Login extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        // onPressed: _incrementCounter,
-        onPressed: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => const CodeScreenInput()),
-          );
-        },
-        child: Text("Login"),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: Container(
+        width: 350,
+        child: SizedBox.fromSize(
+            child: FloatingActionButton(
+                foregroundColor: Colors.white,
+                backgroundColor: Color.fromARGB(255, 17, 66, 2),
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const CodeScreenInput()),
+                  );
+                },
+                child: Text("Login"))),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation
+          .centerFloat, // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
