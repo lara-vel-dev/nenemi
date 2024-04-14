@@ -1,16 +1,25 @@
-# nenemi
+<div align="center">
+  
+  <h1>
+    <img src="https://media1.tenor.com/m/76IzvqjyvgUAAAAC/passport-traveling.gif" width=60> 
+    NENEMI
+    <img src="https://media1.tenor.com/m/76IzvqjyvgUAAAAC/passport-traveling.gif" width=60>
+  </h1>
+   <img src="assets/logo-green.png" width=260>
+</div> 
 
-A new Flutter project.
+<div>
+  <h2>Table of contents</h2>
+  <ol>
+    <li>
+      <a href="#installation"> Who are we? </a>
+    </li>
+    <li>
+      <a href="#macos-using-homebrew">Why Nenemi?</a>
+    </li>
+    <li>
+      <a href="#macos-using-homebrew">Tech Stack</a>
+    </li>
+  </ol>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</div>
