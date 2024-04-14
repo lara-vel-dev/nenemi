@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../QuizScreen/quiz_screen.dart';
+import '../speks/speak.dart';
 import '../styles/button.dart';
 
 Future<void> _launchURL(String url) async {
@@ -27,7 +28,7 @@ class TourScreen extends StatelessWidget {
               height: 250,
             ),
             SizedBox(height: 24), // Add this line for spacing
-
+            Speech(),
             ElevatedButton(
               style: buttonPrimary,
               onPressed: () =>
