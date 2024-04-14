@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import '../QuizScreen/quiz_screen.dart';
-import 'package:nenemi/pages/FinishTourScreen/finish_tour.dart';
 
 class TourScreen extends StatelessWidget {
   @override
