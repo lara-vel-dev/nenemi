@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import '../../CodeScreen/waiting_lobby.dart';
 // import 'package:pin_code_fields/pin_code_fields.dart';
 
 class CodeScreenInput extends StatelessWidget {
@@ -28,6 +30,10 @@ class _NumericCodeScreenState extends State<NumericCodeScreen> {
   void _submitCode() {
     final code = controllers.map((c) => c.text).join();
     print('Código ingresado: $code');
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => LobbyPage()),
+    );
     // Aquí puedes manejar la lógica después de que se presiona el botón enviar
   }
 
