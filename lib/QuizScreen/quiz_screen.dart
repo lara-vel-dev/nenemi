@@ -40,19 +40,22 @@ class _QuizScreenState extends State<QuizScreen> {
         backgroundColor: Color.fromARGB(255, 236, 175, 146),
         title: Text("Test about: Real del Monte"),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
+          child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Image.asset(
-            //   "asstes/images/splash/nenemi-logo.png",
-            //   width: 450,
-            //   height: 200,
-            // ),
+            Image.asset(
+              question.path,
+              width: 250,
+              height: 250,
+            ),
+            SizedBox(height: 16), // Add this line for spacing
+
             Text(
               question.text,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 20),
@@ -62,7 +65,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 )),
           ],
         ),
-      ),
+      )),
     );
   }
 }
