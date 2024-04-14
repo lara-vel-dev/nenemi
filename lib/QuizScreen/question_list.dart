@@ -38,7 +38,7 @@ final List<WidgetQuestion> allQuestions = [
       const WidgetOption(text: "Paracaidismo", isCorrect: false),
       const WidgetOption(text: "Escalada", isCorrect: false),
     ],
-    path: "assets/paste.png",
+    path: "assets/min.png",
     id: 1,
     correctAnswer: const WidgetOption(text: "Tours de minas", isCorrect: true),
   ),
