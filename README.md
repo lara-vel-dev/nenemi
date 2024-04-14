@@ -45,5 +45,7 @@ Nenemi stands as an innovative application harnessing the power of Augmented Rea
 
 <div align="justify">
   <h2>Tech Stack</h2>
-  <p></p>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=dart,flutter&perline=5" width=210/>
+  </a>
 </div>
