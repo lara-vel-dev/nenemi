@@ -88,8 +88,12 @@ class _NumericCodeScreenState extends State<NumericCodeScreen> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Color.fromARGB(255, 17, 66, 2),
         onPressed: _submitCode,
-        child: const Text("Send"),
+        child: const Text(
+          "Send",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }
