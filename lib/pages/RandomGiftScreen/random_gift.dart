@@ -13,12 +13,13 @@ class RandomGift extends StatelessWidget {
     return gifts[randomIndex];
   }
 
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Random Gift Generator")),
+      backgroundColor: Color.fromARGB(255, 236, 175, 146),
+      appBar: AppBar(
+          backgroundColor: Color.fromARGB(255, 236, 175, 146),
+          title: Text("Random Gift Generator")),
       body: Center(
         child: Text(randomGiftGenerator()),
       ),
