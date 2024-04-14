@@ -11,6 +11,7 @@ class CodeScreenInput extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: NumericCodeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
