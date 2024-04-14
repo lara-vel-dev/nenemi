@@ -12,7 +12,7 @@
   <h2>Table of contents</h2>
   <ol>
     <li>
-      <a href="#installation"> Who are we? </a>
+      <a href="#who-are-we"> Who are we? </a>
     </li>
     <li>
       <a href="#macos-using-homebrew">Why Nenemi?</a>
