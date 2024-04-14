@@ -70,7 +70,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              "Waiting for other participants... Meanwhile put your sealtbelt",
+              "Entering to: Real del Monte \nWaiting for other participants... Meanwhile put your sealtbelt",
               style: TextStyle(fontSize: 24),
               textAlign: TextAlign.center,
             ),

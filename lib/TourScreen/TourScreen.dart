@@ -49,7 +49,7 @@ class TourScreen extends StatelessWidget {
               //     throw 'There was a problem to open the url: $url';
               //   }
               // },
-              child: Text("Let's start a Game!"),
+              child: Text("Let's play!"),
             ),
             SizedBox(height: 24), // Add this line for spacing
 
@@ -59,7 +59,7 @@ class TourScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => QuizScreen()),
                 );
               },
-              child: Text("Let's see the Tour"),
+              child: Text("Challenge yourself"),
             ),
           ]
               // QuizScreen
