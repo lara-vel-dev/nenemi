@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nenemi/pages/LoginScreen/login.dart';
 
 import 'CodeScreen/code_screen_input.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Login(),
     );
   }
 }
