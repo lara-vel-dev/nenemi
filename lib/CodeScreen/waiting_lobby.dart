@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 import '../TourScreen/TourScreen.dart';
 
+import '../styles/button.dart';
+
 class LobbyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -84,6 +86,7 @@ class _WaitingRoomScreenState extends State<WaitingRoomScreen> {
           ),
           SizedBox(height: 50),
           ElevatedButton(
+            style: buttonPrimary,
             onPressed: navigateToNextScreen,
             child: Text("Skip other participants and start"),
           ),

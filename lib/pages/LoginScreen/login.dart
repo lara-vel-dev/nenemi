@@ -18,13 +18,24 @@ class Login extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(height: 50),
+              const SizedBox(height: 150),
 
               // logo
-              const Image(image: AssetImage('assets/images/login/logo-green.png')),
+              // const Icon(
+              //   Icons.lock,
+              //   size: 50,
+              // ),
+
+              const SizedBox(height: 20),
+              Text(
+                "LOGIN",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
+              ),
 
               const SizedBox(height: 50),
-
               // welcome back, you've been missed!
               Text(
                 'Welcome back you\'ve been missed!',
@@ -123,7 +134,10 @@ class Login extends StatelessWidget {
                         builder: (context) => const CodeScreenInput()),
                   );
                 },
-                child: Text("Login"))),
+                child: Text(
+                  "Login",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                ))),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation
           .centerFloat, // This trailing comma makes auto-formatting nicer for build methods.
